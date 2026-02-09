@@ -193,12 +193,10 @@ func (y *YtdlpPlatform) Download(
 	}
 
 	// Cookies (YouTube only)
-	if y.isYouTubeURL(track.URL) {
-		if cookieFile, err := cookies.GetRandomCookieFile(); err == nil &&
-			cookieFile != "" {
-			args = append(args, "--cookies", cookieFile)
-		}
+	if y.isYouTubeURL(urlStr) {
+	args = append(args, "--cookies-from-browser", "chrome")
 	}
+
 
 	args = append(args, track.URL)
 
