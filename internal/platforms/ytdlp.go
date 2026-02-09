@@ -251,7 +251,7 @@ func (y *YtdlpPlatform) extractMetadata(urlStr string) (*ytdlpInfo, error) {
 	}
 
 	// Add cookies only for YouTube
-	if y.isYouTubeURL(track.URL) { 
+	if y.isYouTubeURL(urlStr) { 
 		args = append(args, "--cookies-from-browser", "firefox")
 	}
 
