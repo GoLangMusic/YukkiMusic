@@ -194,7 +194,7 @@ func (y *YtdlpPlatform) Download(
 
 	// Cookies (YouTube only)
 	if y.isYouTubeURL(urlStr) {
-	args = append(args, "--cookies-from-browser", "chrome")
+	args = append(args, "--cookies-from-browser", "firefox")
 	}
 
 
