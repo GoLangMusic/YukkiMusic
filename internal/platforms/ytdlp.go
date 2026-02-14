@@ -193,7 +193,7 @@ func (y *YtdlpPlatform) Download(
 
 	// Cookies (YouTube only)
 	if y.isYouTubeURL(track.URL) { 
-		args = append(args, "--proxy", "http://127.0.0.1:40000")
+		args = append(args, "--cookies-from-browser", "firefox")
 	}
 
 
@@ -252,7 +252,7 @@ func (y *YtdlpPlatform) extractMetadata(urlStr string) (*ytdlpInfo, error) {
 
 	// Add cookies only for YouTube
 	if y.isYouTubeURL(urlStr) { 
-		args = append(args, "--proxy", "http://127.0.0.1:40000")
+		args = append(args, "--cookies-from-browser", "firefox")
 	}
 
 	args = append(args, urlStr)
