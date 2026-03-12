@@ -169,8 +169,6 @@ func (y *YtdlpPlatform) Download(
 		"--no-playlist",
 		"--no-part",
 		"--geo-bypass",
-		"--no-warnings",
-		"--ignore-errors",
 		"--no-check-certificate",
 		"-q",
 		"-o", getPath(track, ".%(ext)s"),
@@ -240,7 +238,6 @@ func (y *YtdlpPlatform) extractMetadata(urlStr string) (*ytdlpInfo, error) {
 	args := []string{
 		"-j",
 		"--flat-playlist",
-		"--no-warnings",
 		"--no-check-certificate",
 	}
 
