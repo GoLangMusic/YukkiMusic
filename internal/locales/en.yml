@@ -35,6 +35,20 @@ assistant_restricted_warning: |
 
   <i>Unban the assistant to restore all music features 🎵</i>
 
+autoplay_usage: |
+  ⚙️ <b>AutoPlay Control</b>
+
+  <i>When enabled, the bot will automatically play recommended tracks when the queue is empty.</i>
+  
+  Usage: {cmd} [enable|disable]
+
+  <i><b>Current state:</b> {action}</i>
+
+autoplay_updated: |
+  ⚙️ <b>AutoPlay Updated</b>
+  
+  <i>AutoPlay has been <b>{action}</b> by {user}.</i>
+
 
 # 🧩 Common auth messages
 auth_no_user: "⚠️ Please provide a user — use:\n{cmd} [user_id] or reply to a user's message."
@@ -236,6 +250,13 @@ err_assistant_invite_link_fetch: |
 err_assistant_invite_failed: |
   ⚠️ Assistant failed to join this chat:
   <i>{error}</i>
+
+err_connection_timeout: |
+  ⚠️ <b>VoiceChat Connection Timeout</b>
+
+  Telegram is not responding properly to the voice chat connection right now.
+
+  <i>If this keeps happening, end the voice chat and start it again, then retry.</i>
 
 err_no_active_voicechat: |
   🎙️ <b>No Active Voice Chat</b>
