@@ -169,6 +169,8 @@ func (y *YtdlpPlatform) Download(
 		"--no-playlist",
 		"--no-part",
 		"--geo-bypass",
+		"-v",
+		"--newline"
 		"--no-check-certificate",
 		"-q",
 		"-o", getPath(track, ".%(ext)s"),
