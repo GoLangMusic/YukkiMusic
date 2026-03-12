@@ -173,7 +173,7 @@ func (y *YtdlpPlatform) Download(
 		"--geo-bypass",
 		"-v",
 		"--extractor-args",
-		"youtube:player_client=android",
+		"youtube:player_client=android,web_embedded",
 		"--newline",
 		"--no-check-certificate",
 		"-o", getPath(track, ".%(ext)s"),
