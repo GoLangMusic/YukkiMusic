@@ -27,6 +27,8 @@ import (
 	"errors"
 	"fmt"
 	"net/url"
+	"io"
+	"os"
 	"os/exec"
 	"regexp"
 	"strings"
