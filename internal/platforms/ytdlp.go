@@ -170,7 +170,7 @@ func (y *YtdlpPlatform) Download(
 		"--no-part",
 		"--geo-bypass",
 		"-v",
-		"--newline"
+		"--newline",
 		"--no-check-certificate",
 		"-q",
 		"-o", getPath(track, ".%(ext)s"),
